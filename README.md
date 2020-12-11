@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
 
 
-#How to Run Locally 
+# How to Run Locally 
 * Clone the code into a folder 
 * install angular CLI
 * run npm install 
