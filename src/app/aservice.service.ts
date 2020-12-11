@@ -11,6 +11,6 @@ export class AserviceService {
 
   // return what comes back from this http call
   getUsers() {
-    return this.http.get(`${this.apiUrl}?per_page=10`);
+    return this.http.get(`${this.apiUrl}?q=tom+repos:%3E42+followers:%3E1000&per_page=15`);
   }
 }

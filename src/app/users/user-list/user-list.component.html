@@ -1,16 +1,50 @@
 <section class="section">
     <div class="container">
-    <div class="columns is-multiline">
+        <div class="rows is-multiline">
 
-      <!-- loop over our users and give them each a card -->
-      <div class="column is-4" *ngFor="let user of users | async">
-        <div class="card">
-          <div class="card-content">
-            {{ user.login }} 
-          </div>      
-        </div>      
-      </div>
+            <!-- loop over our users and give them each a card -->
+            <div  *ngFor="let user of users | async">
+                <div class="card">
+                    <div class="card-content">
+                        <table class="table is-striped">
+                            <tr>
+                                <table class="table is-striped">
+                                    <tr class="card">
+                                        <td class="card-content is-light">Login</td>
+                                        <td class="card-content is-light">{{ user.login }}</td>
 
+                                    </tr>
+                                    <tr class="card">
+                                        <td class="card-content is-light">Site Admin</td>
+                                        <td class="card-content is-light">{{ user.site_admin }}</td>
+
+                                    </tr>
+                                    <tr class="card">
+                                        <td class="card-content is-light">User Type</td>
+                                        <td class="card-content is-light">{{ user.type }}</td>
+
+                                    </tr>
+                                    <tr class="card-content">
+                                            <td class="card-content is-light">github URL</td>
+                                            <td class="card-content is-light"><a>{{ user.url }}</a></td>
+                                     
+
+                                    </tr>
+                                </table>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                                <td class="card is-dark is-4by5"><img src={{user.avatar_url}} width="280" height="300"
+                                        alt="images"></td>
+                            </tr>
+                        </table>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
-    </div>
-    </section>
+</section>
