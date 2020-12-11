@@ -8,6 +8,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { FormsModule }   from '@angular/forms';
+import { AserviceService } from './aservice.service';
+import { HttpClientModule } from '@angular/common/http';
+import { UserListComponent } from './users/user-list/user-list.component';
 
 @NgModule({
   declarations: [
@@ -15,14 +18,16 @@ import { FormsModule }   from '@angular/forms';
     ContactComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
