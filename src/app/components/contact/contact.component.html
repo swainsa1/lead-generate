@@ -1,14 +1,15 @@
 <section class="hero is-primary is-bold">
-    <div class="hero-body">
+    
         <div class="container">
 
             <h1 class="title">Contact Us!</h1>
-
-        </div>
+            <progress class="progress is-primary" value="66" max="100"></progress>
+       
     </div>
 </section>
 <!-- form goes here -->
 <form (ngSubmit)="processForm()">
+        <div class="field"> {{message}}</div>
     <!-- name -->
     <div class="field">
         <input type="text" name="name" class="input" placeholder="Your Name" [(ngModel)]="name" required minlength="3">

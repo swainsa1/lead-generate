@@ -10,7 +10,10 @@ export class ContactComponent implements OnInit {
   address:string;
   phone:string;
   email:string;
-  constructor() { }
+  message:string;
+  constructor() { 
+    
+  }
 
   ngOnInit(): void {
   }
@@ -22,7 +25,20 @@ export class ContactComponent implements OnInit {
   processForm() {
     const allInfo = `My name is ${this.name}. My email is ${this.email}. My Address is ${this.address} My phone is ${this.phone}` ;
     console.log(allInfo);
+    this.message="Thank you for registering. Your information has been saved sucessfully";
     
+    this.resetForm();
+  }
+
+  resetForm(){
+    setTimeout(()=>{
+      this.message="";  
+      },1000);
+
+    this.address="";
+    this.email="";
+    this.name="";
+    this.phone="";
   }
 
 }
