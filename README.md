@@ -1,4 +1,4 @@
-# MyApp2
+#  Lead Generate for Binay , A Sample Angular 11 application with a simple form 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
 
