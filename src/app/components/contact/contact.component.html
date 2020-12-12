@@ -2,7 +2,7 @@
     
         <div class="container">
 
-            <h1 class="title">Contact Us!</h1>
+            <h1 class="title">Contact Us for now !</h1>
             <progress class="progress is-primary" value="66" max="100"></progress>
        
     </div>
@@ -12,8 +12,13 @@
         <div class="field"> {{message}}</div>
     <!-- name -->
     <div class="field">
-        <input type="text" name="name" class="input" placeholder="Your Name" [(ngModel)]="name" required minlength="3">
+        <input type="text" name="firstName" class="input" placeholder="Your First Name" [(ngModel)]="firstName" required minlength="3">
     </div>
+
+     <!-- name -->
+     <div class="field">
+            <input type="text" name="lastName" class="input" placeholder="Your Last Name" [(ngModel)]="lastName" required minlength="3">
+        </div>
 
     <!-- email -->
     <div class="field">

@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  name:string;
+  firstName:string;
+  lastName:string;
   address:string;
   phone:string;
   email:string;
@@ -23,7 +24,7 @@ export class ContactComponent implements OnInit {
    * Only alerting for now
    */
   processForm() {
-    const allInfo = `My name is ${this.name}. My email is ${this.email}. My Address is ${this.address} My phone is ${this.phone}` ;
+    const allInfo = `My name is ${this.firstName} ${this.lastName} . My email is ${this.email}. My Address is ${this.address} My phone is ${this.phone}` ;
     console.log(allInfo);
     this.message="Thank you for registering. Your information has been saved sucessfully";
     
@@ -37,7 +38,8 @@ export class ContactComponent implements OnInit {
 
     this.address="";
     this.email="";
-    this.name="";
+    this.firstName="";
+    this.lastName="";
     this.phone="";
   }
 
