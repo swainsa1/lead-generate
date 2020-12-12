@@ -1,0 +1,1 @@
+ng build --outputPath=docs --baseHref=https://swainsa1.github.io/lead-generate/
